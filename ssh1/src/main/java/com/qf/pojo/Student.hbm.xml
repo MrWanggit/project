@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-10 19:40:48 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="com.qf.pojo.Student" table="student" catalog="test" optimistic-lock="version">
+        <id name="sid" type="java.lang.Integer">
+            <column name="sid" />
+            <generator class="identity" />
+        </id>
+        <property name="sname" type="string">
+            <column name="sname" length="100" />
+        </property>
+        <property name="sdesc" type="string">
+            <column name="sdesc" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>
